@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name="google-site-verification" content="80BkXAkckJ2zFSXtzzmeLa8WF_8ullDGw26ah4QLAik" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#132C22">
+<title>Cantinho da Ilha — Doces artesanais · Ilha do Governador</title>
+<meta name="description" content="Doces artesanais feitos no dia, na Ilha do Governador. Pedido pelo site, pagamento no Pix e entrega na sua porta.">
+<meta property="og:title" content="Cantinho da Ilha — Doces artesanais">
+<meta property="og:description" content="Pedido pelo site, Pix e entrega na porta. Ilha do Governador.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #FBF8F3;
+  color: #17251F;
+  line-height: 1.6;
+  padding-bottom: 100px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+::selection { background: #1F4A38; color: #FBF8F3; }
+
+button:focus-visible, input:focus-visible, a:focus-visible {
+  outline: 2px solid #BF5F38;
+  outline-offset: 3px;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+  background: #132C22;
+  padding: 56px 20px 50px;
+  text-align: center;
+  color: #FBF8F3;
+  border-radius: 0 0 24px 24px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C9B9A6;
+  margin: 0 0 18px;
+}
+
+header h1 { font-size: 44px; line-height: 1.05; margin: 0 0 16px; color: #FBF8F3; }
+header h1 em { font-style: italic; font-weight: 400; color: #E9C6AE; }
+header p { margin: 0 auto; max-width: 40ch; font-size: 15px; color: #BFCFC6; }
+
+.destaque {
+  display: block;
+  margin: 22px auto 0;
+  max-width: 40ch;
+  font-size: 13px;
+  color: #E9C6AE;
+  border-top: 1px solid rgba(233,198,174,.25);
+  padding-top: 16px;
+}
+
+.insta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+  padding: 8px 16px;
+  border: 1px solid rgba(233,198,174,.3);
+  border-radius: 999px;
+  color: #E9C6AE;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.insta:hover { background: rgba(233,198,174,.12); }
+
+.regua { width: 54px; height: 2px; margin: 22px auto 0; background: #BF5F38; border-radius: 2px; }
+
+/* ---------- Faixa ---------- */
+.faixa {
+  background: #FFFFFF;
+  color: #4E5F56;
+  text-align: center;
+  padding: 12px 18px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E7E0D5;
+}
+
+.faixa b { color: #1F4A38; font-weight: 600; }
+
+/* ---------- Seção ---------- */
+main { padding: 0 20px; }
+
+.cabecalho-secao {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 54px 0 8px;
+  text-align: center;
+}
+
+.titulo-produtos { font-size: 33px; color: #17251F; margin: 0 0 10px; }
+.subtitulo { margin: 0 auto; max-width: 48ch; color: #7C8A82; font-size: 15px; }
+
+.aviso-minimo {
+  display: block;
+  max-width: 460px;
+  margin: 18px auto 0;
+  background: #F1EADD;
+  border: 1px solid #E2D8C7;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #6F5B45;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 22px;
+  padding: 32px 0 12px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ---------- Cartões ---------- */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #E7E0D5;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(23,37,31,.05), 0 10px 28px -14px rgba(23,37,31,.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  animation: subir 0.6s ease both;
+}
+
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.2s; }
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 56px -22px rgba(23,37,31,.35);
+  border-color: #D6CCBC;
+}
+
+.imagem-produto {
+  position: relative;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 58px;
+  line-height: 1;
+  background: #F6F1E7;
+  border-bottom: 1px solid #E7E0D5;
+}
+
+.card:nth-child(2) .imagem-produto { background: #EEF2EC; }
+.card:nth-child(3) .imagem-produto { background: #F7EDE9; }
+
+.indice {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #A99E8C;
+}
+
+.selo {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: #132C22;
+  color: #E6D8C6;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.corpo-card { display: flex; flex-direction: column; flex: 1; padding: 20px 20px 22px; }
+
+.card h3 { font-size: 20px; line-height: 1.25; color: #17251F; margin: 0 0 6px; }
+
+.dose {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #BF5F38;
+  margin: 0 0 10px;
+}
+
+.card p.desc { margin: 0 0 18px; color: #6F7D75; font-size: 14px; }
+
+.preco { margin: auto 0 16px !important; font-size: 22px; font-weight: 600; color: #17251F; }
+
+.card button {
+  width: 100%;
+  background: #FFFFFF;
+  color: #1F4A38;
+  border: 1px solid #CFD8D2;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.card button:hover { background: #1F4A38; border-color: #1F4A38; color: #FBF8F3; }
+
+/* ---------- Combos ---------- */
+.combos {
+  max-width: 1100px;
+  margin: 46px auto 0;
+  background: #F1EADD;
+  border: 1px solid #E2D8C7;
+  border-radius: 16px;
+  padding: 30px 24px 26px;
+}
+
+.combos h3 { font-size: 22px; color: #17251F; margin: 0 0 4px; text-align: center; }
+.combos .intro { margin: 0 0 22px; text-align: center; font-size: 14px; color: #6F7D75; }
+
+.lista-combos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.combo {
+  background: #FFFFFF;
+  border: 1px solid #E2D8C7;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.combo .economia {
+  align-self: flex-start;
+  background: #BF5F38;
+  color: #FDF3EC;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.combo h4 { font-size: 18px; color: #17251F; margin: 0 0 6px; }
+.combo p { margin: 0 0 16px; font-size: 13px; color: #7C8A82; }
+.combo .valor { margin: auto 0 14px; font-size: 13px; color: #8B7B6A; }
+.combo .valor s { opacity: 0.75; }
+
+.combo .valor b {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1F4A38;
+}
+
+.combo button {
+  width: 100%;
+  background: #1F4A38;
+  color: #F3EEE3;
+  border: none;
+  padding: 11px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 0.25s ease;
+}
+
+.combo button:hover { background: #132C22; }
+
+/* ---------- Passos ---------- */
+.passos {
+  max-width: 1100px;
+  margin: 54px auto 0;
+  border-top: 1px solid #E7E0D5;
+  padding-top: 44px;
+}
+
+.passos h3 { font-size: 26px; color: #17251F; margin: 0 0 6px; text-align: center; }
+.passos .intro { margin: 0 0 28px; text-align: center; font-size: 14px; color: #6F7D75; }
+
+.lista-passos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 26px;
+}
+
+.passo { border-left: 2px solid #E2D8C7; padding-left: 18px; }
+
+.passo .num {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #BF5F38;
+  margin-bottom: 6px;
+}
+
+.passo h4 { font-size: 16px; color: #17251F; margin: 0 0 6px; }
+.passo p { margin: 0; font-size: 14px; color: #6F7D75; }
+
+/* ---------- Ficha técnica ---------- */
+.ficha {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  border-top: 1px solid #E7E0D5;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.ficha h3 { font-size: 17px; color: #17251F; margin: 0 0 8px; }
+.ficha p { margin: 0; font-size: 14px; color: #6F7D75; }
+
+.ficha .nota {
+  grid-column: 1 / -1;
+  border-left: 2px solid #BF5F38;
+  padding-left: 16px;
+  font-size: 13px;
+  color: #7C8A82;
+}
+
+/* ---------- Carrinho ---------- */
+#carrinho {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFFFFF;
+  border-top: 1px solid #E7E0D5;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -14px 40px -18px rgba(23,37,31,.4);
+  z-index: 20;
+  overflow-y: auto;
+  max-height: 88vh;
+}
+
+.barra-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: #132C22;
+  color: #F3EEE3;
+  border: none;
+  padding: 15px 18px;
+  border-radius: 18px 18px 0 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.barra-carrinho .acao {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #E9C6AE;
+  white-space: nowrap;
+}
+
+.painel-carrinho { display: none; padding: 18px; }
+
+#carrinho.aberto .painel-carrinho { display: block; }
+
+.topo-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+#carrinho h4 { font-size: 18px; color: #17251F; margin: 0; }
+
+.limpar {
+  background: none;
+  border: none;
+  color: #8B9C92;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.limpar:hover { color: #BF5F38; }
+
+#itens { margin-bottom: 14px; }
+
+.vazio { margin: 0; padding: 14px 0; color: #7C8A82; font-size: 14px; }
+.vazio span { display: block; font-size: 13px; color: #A3AFA8; }
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px solid #E7E0D5;
+  font-size: 14px;
+}
+
+.item:last-child { border-bottom: 0; }
+.item-nome { color: #17251F; font-weight: 500; }
+.item-linha { display: flex; align-items: center; gap: 10px; }
+
+.qtd {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E7E0D5;
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.qtd button {
+  background: #FFFFFF;
+  border: none;
+  color: #4E5F56;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.qtd button:hover { background: #F1EADD; color: #17251F; }
+
+.qtd span { min-width: 22px; text-align: center; font-size: 13px; font-weight: 600; color: #17251F; }
+
+.item-preco { margin-left: auto; color: #17251F; font-weight: 500; white-space: nowrap; }
+
+.remover {
+  background: #FFFFFF;
+  border: 1px solid #E7E0D5;
+  color: #7C8A82;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.remover:hover { border-color: #E0B4A4; color: #BF5F38; background: #FBF3EF; }
+
+.linhas-total {
+  border-top: 1px solid #E7E0D5;
+  padding-top: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #4E5F56;
+}
+
+.linhas-total .linha { display: flex; justify-content: space-between; padding: 3px 0; }
+
+.linhas-total .total {
+  border-top: 1px dashed #E7E0D5;
+  margin-top: 8px;
+  padding-top: 9px;
+  align-items: baseline;
+  font-size: 15px;
+}
+
+.linhas-total .total b {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 21px;
+  color: #17251F;
+}
+
+.gratis { color: #1F4A38; font-weight: 600; }
+
+.campos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+
+.campo {
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 9px;
+  border: 1px solid #E7E0D5;
+  background: #FBF8F3;
+  font-family: inherit;
+  font-size: 14px;
+  color: #17251F;
+}
+
+.campo::placeholder { color: #A3AFA8; }
+.campo:focus { outline: none; border-color: #1F4A38; background: #FFFFFF; }
+.campo.largo { grid-column: 1 / -1; margin-bottom: 12px; }
+
+.botao-whatsapp {
+  width: 100%;
+  background: #132C22;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  color: #EFE6D9;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.botao-whatsapp:hover { background: #1F4A38; }
+
+.pix {
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: #8B9C92;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ---------- Confirmação ---------- */
+#confirmacao {
+  display: none;
+  margin-top: 16px;
+  border: 1px solid #C9DCCF;
+  background: #F2F7F3;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+#confirmacao.mostrar { display: block; }
+
+#confirmacao .titulo-conf {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1F4A38;
+  margin: 0 0 8px;
+}
+
+.codigo {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #132C22;
+  text-align: center;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px dashed #B9CDBF;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#confirmacao .instrucao {
+  font-size: 12px;
+  color: #5C6E63;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.botao-entregador {
+  width: 100%;
+  background: #1F4A38;
+  border: none;
+  padding: 12px;
+  border-radius: 9px;
+  color: #F3EEE3;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.botao-entregador:hover { background: #132C22; }
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  margin-top: 60px;
+  padding: 46px 20px 52px;
+  text-align: center;
+  background: #132C22;
+  color: #B7C7BE;
+  font-size: 13px;
+}
+
+.rodape strong {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 19px;
+  color: #FBF8F3;
+  margin-bottom: 8px;
+}
+
+.rodape p { margin: 0 0 10px; }
+
+.rodape a {
+  color: #E9C6AE;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(233,198,174,.4);
+  padding-bottom: 2px;
+}
+
+.rodape a:hover { border-bottom-color: #E9C6AE; }
+
+.rodape small { display: block; margin-top: 16px; color: #8B9C92; font-size: 11px; letter-spacing: 0.06em; }
+
+@keyframes subir {
+  from { transform: translateY(16px); }
+  to { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 33px; }
+  .titulo-produtos { font-size: 26px; }
+  .passos h3 { font-size: 22px; }
+}
+
+@media (max-width: 480px) {
+  .produtos { grid-template-columns: 1fr; padding-top: 24px; }
+  .imagem-produto { height: 160px; font-size: 52px; }
+  .cabecalho-secao { padding-top: 42px; }
+  .ficha { gap: 24px; }
+  .combos { padding: 24px 18px 20px; }
+}
+
+@media (min-width: 1024px) {
+  body { padding-bottom: 60px; padding-right: 396px; }
+  header { padding: 72px 20px 64px; }
+
+  #carrinho {
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    width: 356px;
+    border: 1px solid #E7E0D5;
+    border-radius: 16px;
+    box-shadow: 0 22px 56px -22px rgba(23,37,31,.35);
+    max-height: none;
+  }
+
+  .barra-carrinho { display: none; }
+  .painel-carrinho { display: block; padding: 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <span class="eyebrow">Ilha do Governador · Rio de Janeiro</span>
+  <h1>Cantinho da <em>Ilha</em></h1>
+  <p>Doces artesanais feitos no dia, pesados um a um e entregues na sua porta. Você pede pelo site e paga no Pix.</p>
+  <span class="destaque">Sem fila e sem sair de casa. O entregador busca e leva até você.</span>
+  <a class="insta" href="https://www.instagram.com/cantinho.da.ilha.oficial" target="_blank" rel="noopener">@cantinho.da.ilha.oficial</a>
+  <div class="regua"></div>
+</header>
+
+<div class="faixa">
+  Produção diária · <b>Pedido pelo WhatsApp</b> · Entrega na porta
+</div>
+
+<main>
+  <div class="cabecalho-secao">
+    <h2 class="titulo-produtos">O cardápio</h2>
+    <p class="subtitulo">Três receitas da casa, porcionadas uma a uma. Sem foto por discrição — a ficha de cada item diz o que importa.</p>
+    <span class="aviso-minimo">Pedido mínimo R$ 25,00 · Entrega R$ 5,00 na Ilha · Grátis acima de R$ 70,00</span>
+  </div>
+
+  <div class="produtos">
+    <article class="card">
+      <div class="imagem-produto">
+        <span class="indice">01</span>
+        <span class="selo">Feito hoje</span>
+        🌽
+      </div>
+      <div class="corpo-card">
+        <h3>Paconha Doce Tradicional</h3>
+        <p class="dose">10 g · porção alta</p>
+        <p class="desc">Pamonha doce de milho verde, receita da casa. 10 g cortados em 5 fatias — uma fatia já resolve.</p>
+        <p class="preco">R$ 35,00</p>
+        <button data-preco="35" onclick="add('Paconha Doce 10g', this)">Adicionar</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="imagem-produto">
+        <span class="indice">02</span>
+        🍪
+      </div>
+      <div class="corpo-card">
+        <h3>Cream Crack</h3>
+        <p class="dose">0,4 g por unidade · porção média</p>
+        <p class="desc">Biscoito crocante, assado na hora. Vai em pacote fechado e não deixa cheiro.</p>
+        <p class="preco">R$ 20,00</p>
+        <button data-preco="20" onclick="add('Cream Crack 0,4g', this)">Adicionar</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="imagem-produto">
+        <span class="indice">03</span>
+        🥤
+      </div>
+      <div class="corpo-card">
+        <h3>Coca-Colaína</h3>
+        <p class="dose">0,4 g por unidade · porção leve</p>
+        <p class="desc">Bebida gelada, a que bate mais rápido. Boa pedida para a primeira vez.</p>
+        <p class="preco">R$ 20,00</p>
+        <button data-preco="20" onclick="add('Coca-Colaína 0,4g', this)">Adicionar</button>
+      </div>
+    </article>
+  </div>
+
+  <section class="combos">
+    <h3>Combos da casa</h3>
+    <p class="intro">Juntar rende mais e sai mais barato. O desconto já vai aplicado no carrinho.</p>
+
+    <div class="lista-combos">
+      <div class="combo">
+        <span class="economia">Economize R$ 6,00</span>
+        <h4>Combo Dupla</h4>
+        <p>1 Paconha Doce + 1 Cream Crack</p>
+        <p class="valor"><s>R$ 55,00</s><b>R$ 49,00</b></p>
+        <button data-preco="49" onclick="add('Combo Dupla', this)">Adicionar combo</button>
+      </div>
+
+      <div class="combo">
+        <span class="economia">Economize R$ 12,00</span>
+        <h4>Combo Completo</h4>
+        <p>1 Paconha Doce + 1 Cream Crack + 1 Coca-Colaína</p>
+        <p class="valor"><s>R$ 75,00</s><b>R$ 63,00</b></p>
+        <button data-preco="63" onclick="add('Combo Completo', this)">Adicionar combo</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="passos">
+    <h3>Como funciona</h3>
+    <p class="intro">Três passos, e a entrega é na sua porta.</p>
+
+    <div class="lista-passos">
+      <div class="passo">
+        <span class="num">01</span>
+        <h4>Monte o pedido</h4>
+        <p>Escolha no cardápio, ajuste a quantidade e preencha o endereço completo.</p>
+      </div>
+      <div class="passo">
+        <span class="num">02</span>
+        <h4>Pague no Pix</h4>
+        <p>O pedido cai no WhatsApp. Confirmado o Pix, você recebe um código de entrega.</p>
+      </div>
+      <div class="passo">
+        <span class="num">03</span>
+        <h4>Receba com o código</h4>
+        <p>O entregador vai até você e confere o código antes de entregar. Só o seu pedido sai com ele.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ficha">
+    <div>
+      <h3>Área de entrega</h3>
+      <p>Toda a Ilha do Governador. Endereço fora da área é combinado no WhatsApp antes do Pix.</p>
+    </div>
+    <div>
+      <h3>Horário</h3>
+      <p>Todos os dias, das 18h à meia-noite. Pedido feito depois disso sai no dia seguinte.</p>
+    </div>
+    <div>
+      <h3>Pagamento</h3>
+      <p>Só Pix, na confirmação. Envie o comprovante no WhatsApp — sem ele o pedido não sai.</p>
+    </div>
+    <p class="nota">Primeira vez? Comece com metade da porção e espere 90 minutos antes de repetir. Demora mais que o normal para bater — não vá repetir com pressa.</p>
+  </section>
+</main>
+
+<aside id="carrinho">
+  <button class="barra-carrinho" onclick="alternar()" aria-expanded="false" aria-controls="painel">
+    <span id="resumo">Carrinho vazio</span>
+    <span class="acao" id="acao">Ver pedido</span>
+  </button>
+
+  <div class="painel-carrinho" id="painel">
+    <div class="topo-carrinho">
+      <h4>Seu pedido</h4>
+      <button class="limpar" onclick="limpar()">Limpar</button>
+    </div>
+
+    <div id="itens"></div>
+
+    <div class="linhas-total">
+      <div class="linha"><span>Subtotal</span> <span id="subtotal">R$ 0,00</span></div>
+      <div class="linha"><span>Entrega</span> <span id="entrega">R$ 0,00</span></div>
+      <div class="linha total"><span>Total</span> <b id="total">R$ 0,00</b></div>
+    </div>
+
+    <div class="campos">
+      <input type="text" id="rua" class="campo largo" placeholder="Rua / avenida">
+      <input type="text" id="numero" class="campo" placeholder="Número">
+      <input type="text" id="bairro" class="campo" placeholder="Bairro">
+      <input type="text" id="complemento" class="campo largo" placeholder="Complemento (apto, casa, bloco)">
+      <input type="text" id="referencia" class="campo largo" placeholder="Ponto de referência">
+    </div>
+
+    <button class="botao-whatsapp" onclick="finalizar()">Enviar pedido pelo WhatsApp</button>
+    <p class="pix">A chave Pix é enviada na conversa, junto com o prazo.</p>
+
+    <div id="confirmacao">
+      <p class="titulo-conf">Seu código de entrega</p>
+      <div class="codigo" id="codigo">——</div>
+      <p class="instrucao">Passe este código ao entregador na porta. Sem ele, o pedido não é liberado.</p>
+      <button class="botao-entregador" onclick="avisarEntregador()">Avisar o entregador</button>
+    </div>
+  </div>
+</aside>
+
+<footer class="rodape">
+  <strong>Cantinho da Ilha</strong>
+  <p>Ilha do Governador · Rio de Janeiro</p>
+  <a href="https://www.instagram.com/cantinho.da.ilha.oficial" target="_blank" rel="noopener">Instagram</a>
+  <small>Feito à mão, na Ilha</small>
+</footer>
+
+<script>
+var CHAVE = 'cantinho-da-ilha-carrinho';
+var MINIMO = 25;
+var TAXA = 5;
+var GRATIS_ACIMA = 70;
+var ENTREGADOR = '5521993408072';
+var cart = [];
+var codigoAtual = '';
+var enderecoAtual = '';
+
+try {
+  var salvo = JSON.parse(localStorage.getItem(CHAVE) || '[]');
+  if (salvo && salvo.length !== undefined) { cart = salvo; }
+} catch (e) { cart = []; }
+
+cart = cart.map(function (i) {
+  return { nome: i.nome, preco: i.preco, qtd: i.qtd || 1 };
+});
+
+render();
+
+function add(nome, el) {
+  var preco = parseFloat(el.getAttribute('data-preco'));
+  var achou = null;
+
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].nome === nome) { achou = cart[i]; break; }
+  }
+
+  if (achou) {
+    achou.qtd++;
+  } else {
+    cart.push({ nome: nome, preco: preco, qtd: 1 });
+  }
+
+  persistir();
+  abrir();
+}
+
+function mudarQtd(indice, delta) {
+  cart[indice].qtd += delta;
+  if (cart[indice].qtd < 1) { cart.splice(indice, 1); }
+  persistir();
+}
+
+function remover(indice) {
+  cart.splice(indice, 1);
+  persistir();
+}
+
+function limpar() {
+  cart = [];
+  codigoAtual = '';
+  document.getElementById('confirmacao').classList.remove('mostrar');
+  persistir();
+}
+
+function persistir() {
+  try { localStorage.setItem(CHAVE, JSON.stringify(cart)); } catch (e) {}
+  render();
+}
+
+function alternar() {
+  var c = document.getElementById('carrinho');
+  c.classList.toggle('aberto');
+  var aberto = c.classList.contains('aberto');
+  document.getElementById('acao').innerHTML = aberto ? 'Fechar' : 'Ver pedido';
+  document.querySelector('.barra-carrinho').setAttribute('aria-expanded', aberto ? 'true' : 'false');
+}
+
+function abrir() {
+  if (window.innerWidth < 1024) {
+    document.getElementById('carrinho').classList.add('aberto');
+    document.getElementById('acao').innerHTML = 'Fechar';
+  }
+}
+
+function render() {
+  var lista = document.getElementById('itens');
+  var subtotal = 0;
+  var unidades = 0;
+  var html = '';
+
+  for (var i = 0; i < cart.length; i++) {
+    var sub = cart[i].preco * cart[i].qtd;
+    subtotal += sub;
+    unidades += cart[i].qtd;
+
+    html += '<div class="item">'
+      + '<span class="item-nome">' + cart[i].nome + '</span>'
+      + '<div class="item-linha">'
+      +   '<div class="qtd">'
+      +     '<button onclick="mudarQtd(' + i + ', -1)" aria-label="Diminuir ' + cart[i].nome + '">−</button>'
+      +     '<span>' + cart[i].qtd + '</span>'
+      +     '<button onclick="mudarQtd(' + i + ', 1)" aria-label="Aumentar ' + cart[i].nome + '">+</button>'
+      +   '</div>'
+      +   '<span class="item-preco">' + formatar(sub) + '</span>'
+      +   '<button class="remover" onclick="remover(' + i + ')" aria-label="Remover ' + cart[i].nome + '">✕</button>'
+      + '</div>'
+      + '</div>';
+  }
+
+  lista.innerHTML = html || '<p class="vazio">Nada por aqui ainda.<span>Escolha um item do cardápio.</span></p>';
+
+  var taxa = subtotal >= GRATIS_ACIMA ? 0 : (subtotal > 0 ? TAXA : 0);
+  var total = subtotal + taxa;
+
+  document.getElementById('subtotal').innerHTML = formatar(subtotal);
+  document.getElementById('entrega').innerHTML =
+    taxa === 0 && subtotal > 0 ? '<span class="gratis">Grátis</span>' : formatar(taxa);
+  document.getElementById('total').innerHTML = formatar(total);
+
+  document.getElementById('resumo').innerHTML = subtotal > 0
+    ? (unidades === 1 ? '1 item · ' : unidades + ' itens · ') + formatar(total)
+    : 'Carrinho vazio';
+}
+
+function formatar(valor) {
+  return 'R$ ' + valor.toFixed(2).replace('.', ',');
+}
+
+function gerarCodigo() {
+  var letras = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+  var numeros = '23456789';
+  var a = '';
+  for (var i = 0; i < 3; i++) { a += letras.charAt(Math.floor(Math.random() * letras.length)); }
+  for (var j = 0; j < 2; j++) { a += numeros.charAt(Math.floor(Math.random() * numeros.length)); }
+  return a;
+}
+
+function finalizar() {
+  if (!cart.length) {
+    alert('Seu pedido está vazio. Escolha um item do cardápio primeiro.');
+    return;
+  }
+
+  var subtotal = 0;
+  for (var i = 0; i < cart.length; i++) { subtotal += cart[i].preco * cart[i].qtd; }
+
+  if (subtotal < MINIMO) {
+    alert('O pedido mínimo é de ' + formatar(MINIMO) + '. Faltam ' + formatar(MINIMO - subtotal) + '.');
+    return;
+  }
+
+  var rua = document.getElementById('rua').value.replace(/^\s+|\s+$/g, '');
+  var numero = document.getElementById('numero').value.replace(/^\s+|\s+$/g, '');
+  var bairro = document.getElementById('bairro').value.replace(/^\s+|\s+$/g, '');
+  var complemento = document.getElementById('complemento').value.replace(/^\s+|\s+$/g, '');
+  var referencia = document.getElementById('referencia').value.replace(/^\s+|\s+$/g, '');
+
+  if (!rua || !numero || !bairro) {
+    alert('Preencha rua, número e bairro para a entrega.');
+    document.getElementById(!rua ? 'rua' : !numero ? 'numero' : 'bairro').focus();
+    return;
+  }
+
+  codigoAtual = gerarCodigo();
+
+  var linhaEndereco = rua + ', ' + numero;
+  if (complemento) { linhaEndereco += ' — ' + complemento; }
+  linhaEndereco += ' · ' + bairro;
+  if (referencia) { linhaEndereco += ' · ref.: ' + referencia; }
+  enderecoAtual = linhaEndereco;
+
+  var taxa = subtotal >= GRATIS_ACIMA ? 0 : TAXA;
+  var total = subtotal + taxa;
+  var msg = 'Olá! Quero fazer um pedido no Cantinho da Ilha:\n\n';
+
+  for (var j = 0; j < cart.length; j++) {
+    msg += '• ' + cart[j].qtd + 'x ' + cart[j].nome + ' — ' + formatar(cart[j].preco * cart[j].qtd) + '\n';
+  }
+
+  msg += '\nSubtotal: ' + formatar(subtotal);
+  msg += '\nEntrega: ' + (taxa === 0 ? 'grátis' : formatar(taxa));
+  msg += '\nTotal: ' + formatar(total);
+  msg += '\n\nEndereço: ' + linhaEndereco;
+  msg += '\n\nCódigo de entrega: ' + codigoAtual;
+  msg += '\n\nPago no Pix, envio o comprovante.';
+
+  document.getElementById('codigo').innerHTML = codigoAtual;
+  document.getElementById('confirmacao').classList.add('mostrar');
+
+  window.open('https://wa.me/5522981551818?text=' + encodeURIComponent(msg), '_blank');
+}
+
+function avisarEntregador() {
+  if (!codigoAtual) { return; }
+
+  var msg = 'Entrega Cantinho da Ilha\n\n';
+  msg += 'Endereço: ' + enderecoAtual + '\n';
+  msg += 'Código de confirmação: ' + codigoAtual + '\n\n';
+  msg += 'Confira o código na porta antes de entregar.';
+
+  window.open('https://wa.me/' + ENTREGADOR + '?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
+
+</body>
+</html>

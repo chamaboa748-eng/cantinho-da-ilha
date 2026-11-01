@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cantinho-da-ilha.netlify.app/sitemap.xml
