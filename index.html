@@ -721,7 +721,7 @@ main { padding: 0 20px; }
   <div class="cabecalho-secao">
     <h2 class="titulo-produtos">O cardápio</h2>
     <p class="subtitulo">Três receitas da casa, porcionadas uma a uma. Sem foto por discrição — a ficha de cada item diz o que importa.</p>
-    <span class="aviso-minimo">Pedido mínimo R$ 25,00 · Entrega R$ 5,00 na Ilha · Grátis acima de R$ 70,00</span>
+    <span class="aviso-minimo">Pedido mínimo R$ 20,00 · Entrega R$ 5,00 na Ilha · Grátis acima de R$ 70,00</span>
   </div>
 
   <div class="produtos">
@@ -747,10 +747,10 @@ main { padding: 0 20px; }
       </div>
       <div class="corpo-card">
         <h3>Cream Crack</h3>
-        <p class="dose">0,4 g por unidade · porção média</p>
+        <p class="dose">0,6 g · 1 unidade · porção média</p>
         <p class="desc">Biscoito crocante, assado na hora. Vai em pacote fechado e não deixa cheiro.</p>
         <p class="preco">R$ 20,00</p>
-        <button data-preco="20" onclick="add('Cream Crack 0,4g', this)">Adicionar</button>
+        <button data-preco="20" onclick="add('Cream Crack 0,6g', this)">Adicionar</button>
       </div>
     </article>
 
@@ -761,10 +761,10 @@ main { padding: 0 20px; }
       </div>
       <div class="corpo-card">
         <h3>Coca-Colaína</h3>
-        <p class="dose">0,4 g por unidade · porção leve</p>
+        <p class="dose">0,4 g de · 1 unidade · porção leve</p>
         <p class="desc">Bebida gelada, a que bate mais rápido. Boa pedida para a primeira vez.</p>
-        <p class="preco">R$ 20,00</p>
-        <button data-preco="20" onclick="add('Coca-Colaína 0,4g', this)">Adicionar</button>
+        <p class="preco">R$ 15,00</p>
+        <button data-preco="15" onclick="add('Coca-Colaína 0,4g', this)">Adicionar</button>
       </div>
     </article>
   </div>
@@ -783,11 +783,11 @@ main { padding: 0 20px; }
       </div>
 
       <div class="combo">
-        <span class="economia">Economize R$ 12,00</span>
+        <span class="economia">Economize R$ 10,00</span>
         <h4>Combo Completo</h4>
         <p>1 Paconha Doce + 1 Cream Crack + 1 Coca-Colaína</p>
-        <p class="valor"><s>R$ 75,00</s><b>R$ 63,00</b></p>
-        <button data-preco="63" onclick="add('Combo Completo', this)">Adicionar combo</button>
+        <p class="valor"><s>R$ 70,00</s><b>R$ 60,00</b></p>
+        <button data-preco="60" onclick="add('Combo Completo', this)">Adicionar combo</button>
       </div>
     </div>
   </section>
@@ -881,7 +881,7 @@ main { padding: 0 20px; }
 
 <script>
 var CHAVE = 'cantinho-da-ilha-carrinho';
-var MINIMO = 25;
+var MINIMO = 20;
 var TAXA = 5;
 var GRATIS_ACIMA = 70;
 var ENTREGADOR = '5521993408072';
